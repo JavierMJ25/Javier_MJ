@@ -67,13 +67,13 @@ header h1 {
     display: flex;
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
     padding: 20px;
-    gap: 10px; /* Espacio entre carruseles */
+    gap: 5px; /* Espacio entre carruseles */
 }
 
 .carrusel {
     flex: 0 0 auto; /* Evita que el carrusel se estire */
-    width: 90vw; /* Ajusta el ancho del carrusel según el viewport */
-    height: 200px; /* Ajusta la altura del carrusel */
+    width: 100px; /* Ajusta el ancho del carrusel según el viewport */
+    height: 100px; /* Ajusta la altura del carrusel */
     position: relative;
     overflow: hidden;
 }
