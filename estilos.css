@@ -79,8 +79,8 @@ header h1 {
 }
 
 .carrusel img {
-    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
-    height: 100%; /* Ajusta la altura de las imágenes al contenedor */
+    width: 200%; /* Ajusta el ancho de las imágenes al contenedor */
+    height: 200%; /* Ajusta la altura de las imágenes al contenedor */
     object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
     opacity: 0;
     transition: opacity 1s ease-in-out;
