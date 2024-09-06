@@ -1,53 +1,53 @@
-/* Estilos generales */
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif; /* Fuente general del sitio */
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos para el encabezado */
+/* Estilos para titulo */
 header {
-    background-color: #4fc3f7; /* Color de fondo del encabezado */
-    color: #ffffff; /* Color del texto en el encabezado */
+    background-color: #4fc3f7; 
+    color: #ffffff; 
     padding: 50px 20px;
     text-align: center;
-    position: relative; /* Necesario para posicionar los logos absolutamente */
+    position: relative; 
     border-bottom: 40px
 }
 
 header .logo {
     display: flex;
-    align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; 
+    justify-content: center; 
     position: relative;
 }
 
 header h1 {
     margin: 0;
-    font-family: cursive; /* Tipo de letra cursiva para el título */
+    font-family: cursive; 
 }
 
 /* Estilos para los logos */
 .logo-img {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    height: auto; /* Mantiene la proporción del logo */
-    position: absolute; /* Posiciona los logos absolutamente */
+    width: 100px; 
+    height: auto; 
+    position: absolute; 
 }
 
 .logo-img.izquierda {
-    left: 10px; /* Posición a la izquierda */
+    left: 10px; 
 }
 
 .logo-img.derecha {
-    right: 10px; /* Posición a la derecha */
+    right: 10px; 
 }
 
 /* Estilos para la sección de sobre mí */
 #sobre-mi, #contacto, #mapa {
     padding: 20px;
     text-align: center;
-    font-family: cursive; /* Tipo de letra cursiva para las secciones */
+    font-family: cursive; 
 }
 
 /* Estilos para la sección de ubicación */
@@ -57,81 +57,81 @@ header h1 {
 }
 
 #mapa h2 {
-    font-family: cursive; /* Tipo de letra cursiva para el título del mapa */
-    text-align: center; /* Centra el título dentro del contenedor */
-    margin: 0; /* Asegura que no haya márgenes adicionales que afecten la alineación */
+    font-family: cursive; 
+    text-align: center; 
+    margin: 0;
 }
 
 /* Estilos para los carruseles */
 #carruseles {
-    display: flex; /* Usar flexbox para alinear los carruseles en una fila */
-    justify-content: space-between; /* Espacio entre los carruseles */
+    display: flex; 
+    justify-content: space-between;
     padding: 20px;
 }
 
 .carrusel {
-    flex: 1; /* Cada carrusel ocupará el mismo espacio */
-    margin: 0 10px; /* Espacio horizontal entre los carruseles */
-    overflow: hidden; /* Oculta las imágenes que se desbordan del contenedor */
-    max-width: 300px; /* Ajusta el ancho máximo del carrusel */
-    height: 300px; /* Ajusta la altura del carrusel */
-    position: relative; /* Posicionamiento relativo para los elementos hijos */
+    flex: 1; 
+    margin: 0 10px; 
+    overflow: hidden; 
+    max-width: 300px; 
+    height: 300px; 
+    position: relative; 
 }
 
 .carrusel img {
-    position: absolute; /* Posicionamiento absoluto para la animación */
-    width: 100%; /* Ajusta el ancho de las imágenes al tamaño del contenedor */
-    height: 100%; /* Ajusta la altura de las imágenes al tamaño del contenedor */
-    object-fit: cover; /* Ajusta las imágenes para que cubran el contenedor */
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 1s ease-in-out; /* Transición suave para el cambio de imágenes */
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
 }
 
 .carrusel img.activa {
-    opacity: 1; /* Mostrar la imagen activa */
+    opacity: 1; 
 }
 
 /* Estilos para la sección de servicios */
 #servicios {
     padding: 20px;
     display: flex;
-    justify-content: center; /* Centra el contenedor de servicios horizontalmente */
+    justify-content: center; 
 }
 
 .servicios-contenedor {
-    max-width: 1000px; /* Aumenta el ancho máximo del contenedor */
-    width: 90%; /* Ajusta el ancho del contenedor para que ocupe el 90% del espacio disponible */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 30px; /* Aumenta el padding para mayor espacio interno */
-    border: 2px solid #4fc3f7; /* Borde azul claro */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #b3e5fc; /* Fondo azul más claro para el contenedor */
-    text-align: center; /* Centra el texto dentro del contenedor */
+    max-width: 1000px; 
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 30px; 
+    border: 2px solid #4fc3f7; 
+    border-radius: 8px; 
+    background-color: #b3e5fc; 
+    text-align: center; 
 }
 
 .servicios-contenedor h2 {
-    color: #01579b; /* Color del texto en contraste (azul oscuro) */
-    font-family: cursive; /* Tipo de letra cursiva para el título */
-    margin: 0; /* Asegura que no haya márgenes adicionales */
+    color: #01579b; 
+    font-family: cursive; 
+    margin: 0; 
 }
 
 .servicios-contenedor ul {
-    list-style-type: none; /* Quita los puntos de la lista */
+    list-style-type: none; 
     padding: 0;
-    margin: 0; /* Quita márgenes adicionales */
+    margin: 0; 
 }
 
 .servicios-contenedor li {
-    padding: 10px 0; /* Espaciado entre los elementos de la lista */
-    font-size: 18px; /* Tamaño de la fuente */
-    color: #01579b; /* Color del texto en contraste (azul oscuro) */
+    padding: 10px 0; 
+    font-size: 18px; 
+    color: #01579b; 
 }
 
 /* Estilos para la sección de contacto */
 #contacto {
     padding: 20px;
     text-align: center;
-    font-family: cursive; /* Tipo de letra cursiva para la sección de contacto */
+    font-family: cursive; 
     background-color: #e2ffe7;
 }
 
@@ -144,49 +144,49 @@ header h1 {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #ffffff; /* Color del texto en los botones */
-    background-color: #4fc3f7; /* Color de fondo para los botones */
-    border-radius: 5px; /* Bordes redondeados en los botones */
+    color: #ffffff; 
+    background-color: #4fc3f7; 
+    border-radius: 5px; 
     font-size: 16px;
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    transition: background-color 0.3s; 
 }
 
 #contacto .contacto-boton a:hover {
-    background-color: #0288d1; /* Color de fondo al pasar el mouse sobre los botones */
+    background-color: #0288d1; 
 }
 
-/* Estilos para los botones de redes sociales */
+
 #contacto .contacto-boton a.facebook {
-    background-color: #3b5998; /* Color de fondo de Facebook */
+    background-color: #3b5998; 
 }
 
 #contacto .contacto-boton a.instagram {
-    background-color: #c13584; /* Color de fondo de Instagram */
+    background-color: #c13584; 
 }
 
 #contacto .contacto-boton a.whatsapp {
-    background-color: #25d366; /* Color de fondo de WhatsApp */
+    background-color: #25d366; 
 }
 
 /* Estilos para la sección de ubicación */
 #mapa {
     padding: 20px;
-    text-align: center; /* Centra todo el contenido dentro del contenedor del mapa */
+    text-align: center; 
     background-color: #e2ffe7;
 }
 
 .mapa-titulo {
-    margin-bottom: 10px; /* Espacio entre el título y el mapa */
+    margin-bottom: 10px; 
 }
 
 .mapa-titulo h2 {
-    font-family: cursive; /* Tipo de letra cursiva para el título del mapa */
-    margin: 0; /* Asegura que no haya márgenes adicionales */
+    font-family: cursive; 
+    margin: 0; 
 }
 
 .mapa-contenido iframe {
-    width: 100%; /* Ajusta el ancho del mapa al tamaño del contenedor */
-    height: 450px; /* Ajusta la altura del mapa */
+    width: 100%; 
+    height: 450px; 
     border: 0;
     margin-bottom: 80px;
 }
@@ -195,11 +195,11 @@ header h1 {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #4fc3f7; /* Color de fondo del pie de página */
-    color: #ffffff; /* Color del texto en el pie de página */
+    background-color: #4fc3f7; 
+    color: #ffffff; 
     text-align: center;
     padding: 10px 20px;
-    position: fixed; /* Fijo al pie de la ventana */
+    position: fixed; 
     bottom: 0;
     width: 100%;
 }
