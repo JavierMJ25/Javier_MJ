@@ -74,7 +74,7 @@ body {
 #carrusel {
     display: flex; /* Usar flexbox para alinear las imágenes en fila */
     overflow: hidden; /* Oculta las imágenes que se desbordan del contenedor */
-    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    max-width: 300%; /* Ajusta el ancho máximo del carrusel */
     height: 300px; /* Ajusta la altura del carrusel */
     margin: 0 auto; /* Centra el carrusel horizontalmente */
     position: relative; /* Posicionamiento relativo para los elementos hijos */
@@ -82,15 +82,15 @@ body {
 
 .carrusel {
     display: flex; /* Mostrar imágenes en fila */
-    width: 100%; /* Ancho del carrusel */
-    height: 100%; /* Altura del carrusel */
+    width: 300%; /* Ancho del carrusel */
+    height: 300%; /* Altura del carrusel */
     position: absolute; /* Posicionamiento absoluto para la animación */
     transition: transform 1s ease-in-out; /* Transición suave para el cambio de imágenes */
 }
 
 .carrusel img {
-    width: 100%; /* Ajusta el ancho de las imágenes al tamaño del contenedor */
-    height: 100%; /* Ajusta la altura de las imágenes al tamaño del contenedor */
+    width: 300%; /* Ajusta el ancho de las imágenes al tamaño del contenedor */
+    height: 300%; /* Ajusta la altura de las imágenes al tamaño del contenedor */
     object-fit: cover; /* Ajusta las imágenes para que cubran el contenedor */
     flex-shrink: 0; /* Evita que las imágenes se reduzcan */
 }
