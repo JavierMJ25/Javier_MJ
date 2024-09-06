@@ -40,18 +40,18 @@ header h1 {
 /* Tamaño de los logos en pantallas pequeñas */
 @media (max-width: 767px) {
     .logo-img {
-        width: 50px; /* Tamaño de los logos en pantallas pequeñas */
+        width: 60px; /* Tamaño de los logos en pantallas pequeñas */
         height: auto;
         position: absolute;
     }
 }
 
 .logo-img.izquierda {
-    left: 10px;
+    left: 5px;
 }
 
 .logo-img.derecha {
-    right: 10px;
+    right: 5px;
 }
 
 /* Estilos para la sección de sobre mí */
