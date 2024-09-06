@@ -73,14 +73,17 @@ header h1 {
 .carrusel {
     flex: 0 0 auto; /* Evita que el carrusel se estire */
     width: 100px; /* Ajusta el ancho del carrusel según tu preferencia */
-    height: 100px; /* Asegura que la altura sea igual al ancho para mantener la proporción cuadrada */
-    position: relative;
+    position: relative; /* Posiciona el contenedor para las imágenes absolutas */
     overflow: hidden;
+    padding-top: 100%; /* Mantiene la proporción cuadrada */
 }
 
 .carrusel img {
-    width: 200%; /* Ajusta el ancho de las imágenes al contenedor */
-    height: 200%; /* Ajusta la altura de las imágenes al contenedor */
+    position: absolute; /* Posiciona las imágenes absolutamente dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
+    height: 100%; /* Ajusta la altura de las imágenes al contenedor */
     object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -93,18 +96,11 @@ header h1 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .carrusel {
-        width: 200px; /* Ajusta el ancho del carrusel en dispositivos móviles */
-        height: 75px; /* Asegura que la altura sea igual al ancho para mantener la proporción cuadrada */
+        width: 75px; /* Ajusta el ancho del carrusel en dispositivos móviles */
+        padding-top: 75%; /* Mantiene la proporción cuadrada */
     }
 }
 
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-    .carrusel {
-        height: 150px; /* Ajusta la altura del carrusel en dispositivos móviles */
-    }
-}
 /* Estilos para la sección de servicios */
 #servicios {
     padding: 20px;
