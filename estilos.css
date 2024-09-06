@@ -62,7 +62,14 @@ header h1 {
     margin: 0;
 }
 
-/* Estilos para los carruseles */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general del sitio */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #carruseles {
     display: flex;
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
@@ -73,9 +80,10 @@ header h1 {
 .carrusel {
     flex: 0 0 auto; /* Evita que el carrusel se estire */
     width: 100px; /* Ajusta el ancho del carrusel según tu preferencia */
+    height: 100px; /* Ajusta la altura del carrusel para que sea cuadrado */
     position: relative; /* Posiciona el contenedor para las imágenes absolutas */
     overflow: hidden;
-    padding-top: 100%; /* Mantiene la proporción cuadrada */
+    border-radius: 8px; /* Opcional: bordes redondeados */
 }
 
 .carrusel img {
@@ -98,7 +106,14 @@ header h1 {
 @media (max-width: 768px) {
     .carrusel {
         width: 75px; /* Ajusta el ancho del carrusel en dispositivos móviles */
-        padding-top: 75%; /* Mantiene la proporción cuadrada */
+        height: 75px; /* Ajusta la altura del carrusel para que sea cuadrado */
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel {
+        width: 50px; /* Ajusta el ancho del carrusel en dispositivos móviles más pequeños */
+        height: 50px; /* Ajusta la altura del carrusel para que sea cuadrado */
     }
 }
 
