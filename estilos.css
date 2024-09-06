@@ -71,10 +71,10 @@ header h1 {
 
 .carrusel {
     flex: 1; 
-    margin: 0 5px; 
+    margin: 0 0px; 
     overflow: hidden; 
-    max-width: 200px; 
-    height: 200px; 
+    max-width: 100px; 
+    height: 100px; 
     position: relative; 
 }
 
