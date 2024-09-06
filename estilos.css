@@ -67,12 +67,12 @@ header h1 {
     display: flex;
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
     padding: 20px;
-    gap: 5px; /* Espacio entre carruseles */
+    gap: 10px; /* Espacio entre carruseles */
 }
 
 .carrusel {
     flex: 0 0 auto; /* Evita que el carrusel se estire */
-    width: 50px; /* Ajusta el ancho del carrusel según tu preferencia */
+    width: 100px; /* Ajusta el ancho del carrusel según tu preferencia */
     position: relative; /* Posiciona el contenedor para las imágenes absolutas */
     overflow: hidden;
     padding-top: 100%; /* Mantiene la proporción cuadrada */
@@ -80,11 +80,12 @@ header h1 {
 
 .carrusel img {
     position: absolute; /* Posiciona las imágenes absolutamente dentro del contenedor */
-    top: 0;
-    left: 0;
-    width: 50%; /* Ajusta el ancho de las imágenes al contenedor */
-    height: 50%; /* Ajusta la altura de las imágenes al contenedor */
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+    transform: translate(-50%, -50%); /* Centra la imagen dentro del contenedor */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -100,6 +101,7 @@ header h1 {
         padding-top: 75%; /* Mantiene la proporción cuadrada */
     }
 }
+
 
 /* Estilos para la sección de servicios */
 #servicios {
