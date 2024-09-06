@@ -93,8 +93,8 @@ header h1 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .carrusel {
-        width: 100px; /* Ajusta el ancho del carrusel en dispositivos móviles */
-        height: 100px; /* Asegura que la altura sea igual al ancho para mantener la proporción cuadrada */
+        width: 200px; /* Ajusta el ancho del carrusel en dispositivos móviles */
+        height: 75px; /* Asegura que la altura sea igual al ancho para mantener la proporción cuadrada */
     }
 }
 
