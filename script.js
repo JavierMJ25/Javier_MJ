@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
     const carrusel = document.querySelector('.carrusel');
-    let index = 0;
+    let imagenes = carrusel.querySelectorAll('img');
+    let indice = 0;
 
-    function cambiarImagen() {
-        index = (index + 1) % carrusel.children.length;
-        carrusel.style.transform = `translateX(-${index * 100}%)`;
-    }
+    // Mostrar la primera imagen inicialmente
+    imagenes[indice].classList.add('activa');
 
-    setInterval(cambiarImagen, 4000); // 4000 milisegundos = 4 segundos
+    setInterval(() => {
+        // Ocultar la imagen actual
+        imagenes[indice].classList.remove('activa');
+
+        // Calcular el siguiente índice
+        indice = (indice + 1) % imagenes.length;
+
+        // Mostrar la siguiente imagen
+        imagenes[indice].classList.add('activa');
+    }, 4000); // 4000 milisegundos = 4 segundos
 });
