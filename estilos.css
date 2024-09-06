@@ -31,7 +31,7 @@ header h1 {
 /* Tamaño de los logos en pantallas grandes */
 @media (min-width: 768px) {
     .logo-img {
-        width: 60px; /* Tamaño de los logos en pantallas grandes */
+        width: 75px; /* Tamaño de los logos en pantallas grandes */
         height: auto;
         position: absolute;
     }
